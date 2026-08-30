@@ -116,6 +116,9 @@ function renderSchedule() {
 }
 
 searchInput.addEventListener('input', renderSchedule);
+document.getElementById('themeToggle').addEventListener('click', () => {
+  document.documentElement.classList.toggle('dark');
+  document.getElementById('themeToggle').textContent = document.documentElement.classList.contains('dark') ? '☀' : '☾';
 });
 document.documentElement.classList.add('dark');
 renderTabs();
