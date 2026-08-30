@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4-Week Timetable</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">ИВТ-13М</p>
+        <h1>4-Week Timetable</h1>
+        <p class="subtitle">Your class schedule in one simple, mobile-friendly page.</p>
+      </div>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">☾</button>
+    </header>
+
+    <section class="controls">
+      <div class="week-tabs" id="weekTabs" role="tablist" aria-label="Weeks"></div>
+      <label class="search">
+        <span>Search</span>
+        <input id="searchInput" type="search" placeholder="Subject, room, type…" />
+      </label>
+    </section>
+
+    <section id="schedule" class="schedule" aria-live="polite"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
